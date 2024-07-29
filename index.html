@@ -19,13 +19,37 @@
         border-bottom: 1px solid #57b1dc;
         margin-top: 30px;
       }
+
+      table {
+        border: 1px solid red;
+      }
     </style>
   </head>
 
   <body>
     <main>
       <header>
+        <!-- <img
+          src="images/blackgoose.png"
+          alt="text"
+          srcset="
+            strawberries-480.jpg   480w,
+            strawberries-960.jpg   960w,
+            strawberries-1280.jpg 1280w,
+            strawberries-2400.jpg 2400w
+          "
+          sizes="100vw"
+        /> -->
+
         <h1>More about <em>WOFF</em></h1>
+        <h1>
+          <img
+            src="images/blackgoose.png"
+            alt="logo"
+            width="200"
+            height="200"
+          /><br />Black Goose Bistro
+        </h1>
         <p>
           by Jennifer Robbins,
           <time datetime="2017-11-11">November 11, 2017</time>
@@ -34,8 +58,9 @@
       <aside>
         <h2>Web Font Resources</h2>
         <ul>
-          <li><a href="http://typekit.com/">Typekit</a></li>
+          <li><a href="http://typekit.com/" target="_blank">Typekit</a></li>
           <li><a href="http://fonts.google.com">Google Fonts</a></li>
+          <li><a href="tel:+01-800-555-1212">Telephone Number</a></li>
         </ul>
       </aside>
       <article>
@@ -75,6 +100,24 @@
 
           <data value="12">Twelve</data>
           <data value="978-1-449-39319-9">CSS: The Definitive Guide</data>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 60"
+            width="100"
+            height="60"
+          >
+            <rect width="100" height="60" fill="purple" rx="7" ry="7" />
+            <text
+              x="10"
+              y="38"
+              fill="yellow"
+              font-family="'Verdana-Bold'"
+              font-size="12"
+            >
+              This is an SVG!
+            </text>
+          </svg>
         </section>
         <section>
           <div class="introduction">
@@ -189,6 +232,40 @@
                     </pre>
             <figcaption>Sample CSS rule.</figcaption>
           </figure>
+        </section>
+        <section>
+          <h2>Tables</h2>
+          <table>
+            <caption>
+              Nutritional Information
+            </caption>
+            <colgroup>
+                <col class="start">
+                <col class="end">
+                </colgroup>
+                <colgroup>
+                <col class="start">
+                <col class="end">
+                </colgroup>
+            <tr>
+              <th>Menu item</th>
+              <th>Calories</th>
+              <th>Fat (g)</th>
+              <th colspan="2">Fat</th>
+            </tr>
+            <tr>
+              <td>Chicken noodle soup</td>
+              <td>120</td>
+              <td>2</td>
+              <td>Saturated Fat (g)</td>
+              <td>Unsaturated Fat (g)</td>
+            </tr>
+            <tr>
+              <td>Caesar salad</td>
+              <td>400</td>
+              <td>26</td>
+            </tr>
+          </table>
         </section>
       </article>
 
