@@ -234,19 +234,177 @@
           </figure>
         </section>
         <section>
+          <h1>Mailing List Signup</h1>
+          <form action="/mailinglist.php" method="POST">
+            <fieldset>
+              <legend>Join our email list</legend>
+              <p>
+                Get news about the band such as tour dates and special MP3
+                releases sent to your own in-box.
+              </p>
+              <ol>
+                <li>
+                  <label for="firstlast">Name:</label>
+                  <input type="text" name="fullname" id="firstlast" />
+                </li>
+                <li>
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" id="email" />
+                </li>
+                <li>
+                  <label for="form-pswd">Password:</label><br />
+                  <input
+                    type="password"
+                    name="pswd"
+                    maxlength="12"
+                    id="form-pswd"
+                  />
+                </li>
+                <li>
+                  <label for="gender">Choose your gender:</label>
+
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                  <label for="female">Female</label>
+
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </li>
+
+                <li>
+                  <label for="education"
+                    >Choose the type of education you have completed.</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="education"
+                    id="highSchool"
+                    value="highSchool"
+                  />
+                  <label for="highSchool">High School</label>
+                  <input
+                    type="checkbox"
+                    name="education"
+                    id="bachelorDegree"
+                    value="bachelorDegree"
+                  />
+                  <label for="bachelorDegree">Bachelor Degree</label>
+                  <input
+                    type="checkbox"
+                    name="education"
+                    id="masterDegree"
+                    value="masterDegree"
+                  />
+                  <label for="masterDegree">Master Degree</label>
+                  <input
+                    type="checkbox"
+                    name="education"
+                    id="none"
+                    value="none"
+                  />
+                  <label for="none">None</label>
+                </li>
+
+                <li>
+                  <label for="favouriteBand"
+                    >What is your favorite 80s band?
+                  </label>
+                  <select name="EightiesFave" required>
+                    <option label="The Cure" value="The Cure">
+                    <option label="Cocteau Twins" value="Cocteau Twins">
+                    <option label="Tears for Fears" value="Tears for Fears">
+                    <option label="Thompson Twins" value="Thompson Twins">
+                    <option label="Everything But the Girl" value="EBTG">
+                    <option label="Depeche Mode" value="Depeche Mode">
+                    <option label="The Smiths" value="The Smiths">
+                    <option label="New Order" value="New Order">
+                  </select>
+                </li>
+                <li>
+                  <label for="favouriteBands"
+                    >What is your favorite 80s band?
+                  </label>
+                  <select name="EightiesBands" size="6" multiple required>
+                    <option>The Cure</option>
+                    <option>Cocteau Twins</option>
+                    <option>Tears for Fears</option>
+                    <option>Thompson Twins</option>
+                    <option value="EBTG">Everything But the Girl</option>
+                    <option>Depeche Mode</option>
+                    <option>The Smiths</option>
+                    <option>New Order</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="icecream">Icecream</label>
+                  <select name="icecream" size="7" multiple required>
+                    <optgroup label="traditional">
+                      <option>vanilla</option>
+                      <option>chocolate</option>
+                    </optgroup>
+                    <optgroup label="fancy">
+                      <option>Super praline</option>
+                      <option>Nut surprise</option>
+                      <option>Candy corn</option>
+                    </optgroup>
+                  </select>
+                </li>
+                <li>
+                  <p>
+                    <label
+                      >Official contest entry: <br />
+                      <em
+                        >Tell us why you love the band. Five winners will get
+                        backstage passes!</em
+                      ><br />
+                      <textarea name="contest_entry" rows="5" cols="50">
+                        The band is totally awesome!
+                      </textarea>
+                    </label>
+                  </p>
+                </li>
+                <li>
+                  <label for="file">Add a photo of your favourite band.</label>
+                  <input type="file" name="photo" />
+                </li>
+                <li>
+                  <label for="inputs">Different type of inputs:</label>
+                  <input type="time" />
+                  <input type="date" />
+                  <input type="datetime-local" />
+                  <input type="month" />
+                  <input type="week" />
+                  <input type="number" />
+                  <input type="range" />
+                  <input type="color" />
+                </li>
+              </ol>
+              <input type="submit" value="Submit" />
+              <input type="reset" />
+            </fieldset>
+          </form>
+          <iframe src="glossary.html" frameborder="0" height="200" width="300">
+            This is an iframe
+          </iframe>
+        </section>
+        <section>
           <h2>Tables</h2>
           <table>
             <caption>
               Nutritional Information
             </caption>
             <colgroup>
-                <col class="start">
-                <col class="end">
-                </colgroup>
-                <colgroup>
-                <col class="start">
-                <col class="end">
-                </colgroup>
+              <col class="start" />
+              <col class="end" />
+            </colgroup>
+            <colgroup>
+              <col class="start" />
+              <col class="end" />
+            </colgroup>
             <tr>
               <th>Menu item</th>
               <th>Calories</th>
